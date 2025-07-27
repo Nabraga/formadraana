@@ -1,0 +1,243 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma Dra. Ana</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfRK6sxiLxP-GiYDhjx1Tsm3NO9HNqxjw&callback=console.debug&libraries=maps,marker&v=beta"></script>
+</head>
+
+<body>
+ <div class="welcome-container">
+  <section id="Welcome" class="page active">
+     <h1 class="title">Bem-vindo(a)!</h1>
+
+    <div class="photo-fade">
+      <img class="main-photo" src="images/FOTO FAMÍLIA GRANDE.jpg" alt="Foto de apresentação">
+    </div>
+
+    <button id="close-welcome" class="close-btn">
+      <img src="images/fechar.png" alt="Fechar" style="width:45px; height:45px">
+    </button>
+  </section>
+ </div>
+
+ <div class="home-container">
+   <section id="Present" class="page">
+       <h2 class="title">Oie!</h2>
+     <p>Finalmente, após 06 longos anos, estamos cada vez mais perto da tão sonhada formatura (e do CRM)!</p>
+       <p>À essa altura, sei que me conhecem o suficiente pra saber que eu faria tudo bem a minha cara por aqui, né?</p>
+       <p>E é claro que não deixaria de te convidar para me acompanhar nesse dia tão especial!</p>
+       <p class="no-bg">Espero que gostem do site: fiz tudo com muito carinho e cuidado! Ao lado, vocês terão acesso à algumas
+         memórias desses 06 anos, às informações do evento e ao formulário para confirmar sua presença na festa. Com amor, Ana!</p>
+
+     <div class="nav" id="main-nav">
+      <button class="nav-item" data-target="Photos">FOTOS</button>
+      <button class="nav-item" data-target="Infos">MAIS INFOS</button>
+      <button class="nav-item" data-target="RSVP">CONFIRME SUA PRESENÇA</button>
+     </div>
+   </section>
+  </div>
+
+  <div class="tab-content-container">
+    <section id="Photos" class="tab-content tab-photos">
+      <button class="back-btn" data-target="Present">VOLTAR</button>
+
+      <div class="photo-container">
+        <div class="gallery-track">
+          <img class="gallery" src="images/mao.jpg" alt="Mão"/>
+          <img class="gallery" src="images/viva.jpeg" alt="Viva"/>
+          <img class="gallery" src="images/dad.jpg" alt="Dad"/>
+          <img class="gallery" src="images/grupo.jpg" alt="Grupo"/>
+          <img class="gallery" src="images/kiss.jpg" alt="Kiss"/>
+          <img class="gallery" src="images/mary.png" alt="Mary"/>
+          <img class="gallery" src="images/mom.jpg" alt="Mom"/>
+          <img class="gallery" src="images/rc.jpg" alt="RC"/>
+          <img class="gallery" src="images/vovos.jpg" alt="Vovós"/>
+          <img class="gallery" src="images/FOTO FAMÍLIA GRANDE.jpg" alt="Ana"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="Infos" class="tab-content tab-infos">
+      <h3 class="title">Aqui vão algumas informações:</h3>
+
+     <div class="infos-text1">
+       <p>a festa ocorrerá no dia <strong>29.11.2025</strong>,</p>
+       <p>das <strong>23h</strong> até às <strong>5h</strong>, no <strong>Expominas BH</strong>.</p>
+     </div>
+
+     <div class="infos-text2">
+       <p>Endereço: Av. Amazonas, 6200 </p>
+       <p>Gameleira - Belo Horizonte.</p>
+     </div>  
+
+     <div class="infos-text3">
+       <h4 class="title">TRAJE:</h4>
+       <p>SOCIAL COMPLETO</p>
+     </div>
+
+     <gmp-map center="-19.93060874938965,-43.99040603637695" zoom="16" map-id="DEMO_MAP_ID">
+       <gmp-advanced-marker position="-19.93060874938965,-43.99040603637695" title="Expominas BH"></gmp-advanced-marker>
+     </gmp-map>
+     
+     <div class="photo">
+       <img class="logo" src="images/LOGO.png" alt="logo">
+     </div>
+
+      <button class="back-btn" data-target="Present">VOLTAR</button>
+    </section>
+
+    <section id="RSVP" class="tab-content tab-rsvp">
+      <button class="back-btn" data-target="Present">VOLTAR</button>
+       <h5 class="title">Posso contar com você na festa?</h5>
+
+      <div class="main-login">
+        <div class="left-login">
+          <p>Gostaria de poder convidar toda família e amigos, mas infelizmente a quantidade de ingressos é limitada.<br>
+          Peço que confirmem a presença abaixo e respondam o formulário ao lado até o dia <strong>01.08.2025</strong><br><br>
+          <strong>Obs.: se o convite (enviado pelo WhatsApp) foi direcionado à mais de uma pessoa, favor preencher o formulário novamente com os dados de cada um</strong></p>
+      
+          <div class="nav" id="main-nav">
+            <button onclick="salvarNoCalendario()" class="nav-item" data-link="calendar">NA AGENDA!</button>
+          </div>  
+        </div>
+
+        <div class="infos-text4">
+          <h6 class="title">NÃO SE ESQUEÇA DE SALVAR</h6>
+        </div>
+
+        <div id="infos-text5" class="infos-text5" style="display:none;">
+          <p>Combinei com a maquiadora e com a cabeleireira de reservar <strong>a tarde</strong> para nos arrumarmos aqui em casa.
+          Para quem quiser agendar um horário, favor confirmar ao lado e colocar a partir de qual horário (depois de 13h) seria melhor.
+          Caso não necessite, apenas digite "não"</p>
+        </div>
+
+        <div class="right-login">
+          <div class="attendance123">
+            <div class="attendance1">
+              <button class="yes-btn">É CLARO! NÃO PERDERIA POR NADA!</button>
+            </div>
+
+            <div class="attendance2">
+              <button class="maybe-btn">AINDA NÃO TENHO CERTEZA</button>
+            </div>
+
+            <div class="attendance3">
+              <button class="no-btn">INFELIZMENTE NÃO PODEREI IR</button>
+            </div>
+          </div>
+      
+          <div class="no-response-message" style="display: none;">
+            <p><strong>Ah, que pena! Você fará falta...<br>A festa não será a mesma sem você</strong><br><br>E não se
+              preocupe, caso tenha clicado errado ou mude de ideia, é só recarregar a página!</p>
+          </div>
+
+          <form id="meuForm">
+            <div class="card-login" style="display:none;">
+              <div class="textfieldN">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+              </div>
+
+              <div class="textfieldGroup">
+
+                <div class="textfieldW">
+                  <label for="phone">WhatsApp:</label>
+                  <input type="tel" id="campoW" name="phone" placeholder="Seu WhatsApp" pattern="\(\d{2}\) \d{1} \d{4}-\d{4}" required>
+                </div>
+
+                <div class="textfieldI">
+                  <label for="inicials">Suas iniciais:</label>
+                  <input type="text" id="campoI" name="inicials" pattern="[A-Za-z]{2,3}" title="Digite 2 a 3 letras" placeholder="Digite de 02 a 03 letras" required>
+                </div>
+              </div> 
+            
+              <div class="textfieldGroupB">
+                <div class="textfieldF">
+                  <label>Sexo:</label>
+                    <div class="radio-group">
+                      <label>
+                        <input type="radio" id="masculino" name="sex" value="Masculino" required>
+                        Masculino
+                      </label>
+
+                      <label>
+                        <input type="radio" id="feminino" name="sex" value="Feminino">
+                        Feminino
+                      </label>
+                    </div>
+                </div>
+
+                <div class="textfieldA">
+                  <label for="age">Idade:</label>
+                  <select id="age" name="age" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="0-09">09 anos ou menos</option>
+                    <option value="10-14">10-14 anos</option>
+                    <option value="15-45">15-45 anos</option>
+                    <option value="46+">46 anos ou mais</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="textfieldD">
+                <label for="alergy">Você tem alguma alergia ou restrição?</label>
+                <input type="text" id="alergy" name="alergy" placeholder="Alimento / Medicamento" required>
+              </div>
+
+              <div class="textfieldGroupC">
+                <div class="textfieldS" style="display:none;">
+                  <label for="size">Quanto você calça?</label>
+                    <select id="size" name="size" required>
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="34">≤32</option>
+                      <option value="33">33</option>
+                      <option value="34">34</option>
+                      <option value="35">35</option>
+                      <option value="36">36</option>
+                      <option value="37">37</option>
+                      <option value="38">38</option>
+                      <option value="39">39</option>
+                      <option value="40">≥40</option>
+                    </select>
+                </div>
+
+                <div class="textfieldM"  style="display:none;">
+                  <label for="makeup">Reservar horário pra make?</label>
+                  <input type="text" id="makeup" name="makeup" placeholder="Valor: R$190,00" required>
+                </div>
+              </div>
+
+              <div class="textfieldH"  style="display:none;">
+                <label for="hair">Reservar horário pra arrumar o cabelo?</label>
+                <input type="text" id="hair" name="hair" placeholder="Valores: R$120,00 (escova) | R$180,00 (cachos) | R$200,00 (penteado)" required>
+              </div>
+
+              <div class="nav" id="second-nav">
+                <button class="submit" link="submit-btn nav-item" style="display: none;">ENVIAR</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="send-response-message" style="display: none;">
+            <p><strong>Oba! Seus dados já foram salvos!</strong><br>Logo logo você receberá uma mensagem no seu WhatsApp com os dados
+              (preenchidos no formulário) para conferência e o link para entrar no grupo da festa!<br><br>
+              O convite foi direcionado à mais de uma pessoa? Clique no botão abaixo e preencha o formulário mais uma vez!</p>
+
+            <button id="novaRespostaBtn">NOVA RESPOSTA</button>
+          </div>
+        </div>
+      </div>
+    </section>
+ </div>
+
+  <footer>
+    <p>Desenvolvido por Ana Luísa Braga</p>
+    <p>© 2025 Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
