@@ -1,0 +1,364 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma Dra. Ana</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfRK6sxiLxP-GiYDhjx1Tsm3NO9HNqxjw&callback=console.debug&libraries=maps,marker&v=beta"></script>
+</head>
+
+<body>
+ <div class="welcome-container">
+  <section id="Welcome" class="page active">
+     <h1 class="title">Bem-vindo(a)!</h1>
+
+    <div class="photo-fade">
+      <img class="main-photo" src="images/foto familia grande.jpg" alt="Foto de apresentação">
+    </div>
+
+    <button id="close-welcome" class="close-btn">
+      <img src="images/fechar.png" alt="Fechar" style="width:45px; height:45px">
+    </button>
+  </section>
+ </div>
+
+ <div class="home-container">
+   <section id="Present" class="page">
+       <h2 class="title">Oie!</h2>
+     <p>Finalmente, após 06 longos anos, estamos cada vez mais perto da tão sonhada formatura (e do CRM)!</p>
+       <p>À essa altura, sei que me conhecem o suficiente pra saber que eu faria tudo bem a minha cara por aqui, né?</p>
+       <p class="no-bg">Espero que gostem do site: fiz tudo com muito carinho e cuidado Ao lado, vocês terão acesso à algumas
+         memórias, às informações do evento e ao formulário para confirmar sua presença na festa. Com amor, Ana!</p>
+
+     <div class="nav" id="main-nav">
+      <button class="nav-item" data-target="Photos">FOTOS</button>
+      <button class="nav-item" data-target="Infos">MAIS INFOS</button>
+      <button class="nav-item" data-target="RSVP">CONFIRME SUA PRESENÇA</button>
+     </div>
+
+     <h2 class="subtitle">FALTAM:</h2>
+
+     <div id="countdown" class="countdown-wrapper">
+      <div class="circle">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" />
+          <text x="50" y="85">
+            <textPath href="#dias-path" startOffset="-2%" text-anchor="middle">dias</textPath>
+          </text>
+          <defs>
+            <path id="dias-path" d="M20,95 A47,45 0 0,0 95,50" />
+          </defs>
+          <text id="dias-num" x="50" y="60" text-anchor="middle" class="number">0</text>
+        </svg>
+      </div>
+
+      <div class="circle">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" />
+          <text x="50" y="85">
+            <textPath href="#horas-path" startOffset="2%" text-anchor="middle">horas</textPath>
+          </text>
+          <defs>
+            <path id="horas-path" d="M20,95 A46,38 0 0,0 90,48" />
+          </defs>
+          <text id="horas-num" x="50" y="60" text-anchor="middle" class="number">0</text>
+        </svg>
+      </div>
+
+      <div class="circle">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" />
+          <text x="50" y="85">
+            <textPath href="#minutos-path" startOffset="10%" text-anchor="middle">minutos</textPath>
+          </text>
+          <defs>
+            <path id="minutos-path" d="M20,95 A48,42 0 0,0 95,47" />
+          </defs>
+          <text id="minutos-num" x="50" y="60" text-anchor="middle" class="number">0</text>
+        </svg>
+      </div>
+
+      <div class="circle">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" />
+          <text x="50" y="85">
+            <textPath href="#segundos-path" startOffset="18%" text-anchor="middle">segundos</textPath>
+          </text>
+          <defs>
+            <path id="segundos-path" d="M20,92 A48,39 0 0,0 98,52" />
+          </defs>
+          <text id="segundos-num" x="50" y="60" text-anchor="middle" class="number">0</text>
+        </svg>
+      </div>
+    </div>
+   </section>
+  </div>
+
+  <div class="tab-content-container">
+    <section id="Photos" class="tab-content tab-photos">
+      <button class="back-btn" data-target="Present">VOLTAR</button>
+
+      <div class="photo-container">
+        <div class="gallery-track">
+          <img class="gallery" src="images/ale 15.jpg" alt="ale15">
+          <img class="gallery" src="images/ale 30.jpg" alt="ale30">
+          <img class="gallery" src="images/ped.jpg" alt="ped">
+          <img class="gallery" src="images/mom.jpg" alt="Mom">
+          <img class="gallery" src="images/ale 13.jpg" alt="ale13">
+          <img class="gallery" src="images/ale 2.jpg" alt="ale2">
+          <img class="gallery" src="images/pegasus.jpeg" alt="pegasus2">
+          <img class="gallery" src="images/meio medico 06.jpg" alt="mm6">
+          <img class="gallery" src="images/ale 9.jpg" alt="ale9">
+          <img class="gallery" src="images/antigo 7.jpg" alt="senhora">
+          <img class="gallery" src="images/morgana 2.jpg" alt="morg2">
+          <img class="gallery" src="images/ped 2.jpg" alt="ped2">
+          <img class="gallery" src="images/ale 4.jpg" alt="ale4">
+          <img class="gallery" src="images/ale 12.jpg" alt="ale12">
+          <img class="gallery" src="images/ale 40.heic" alt="ale40">
+          <img class="gallery" src="images/ale 16.jpg" alt="ale16">
+          <img class="gallery" src="images/antigo 6.jpg" alt="senhor">
+          <img class="gallery" src="images/internato.jpg" alt="internato">
+          <img class="gallery" src="images/365.jpg" alt="365">
+          <img class="gallery" src="images/meio medico 07.jpg" alt="mm7">
+          <img class="gallery" src="images/ale 24.jpg" alt="ale24">
+          <img class="gallery" src="images/jaleco.jpeg" alt="jaleco">
+          <img class="gallery" src="images/ale 6.jpg" alt="ale6">
+          <img class="gallery" src="images/ale 29.jpg" alt="ale29">
+          <img class="gallery" src="images/ale 14.jpg" alt="ale14">
+          <img class="gallery" src="images/pegasus 2.jpg" alt="pegasus">
+          <img class="gallery" src="images/ped 3.jpg" alt="ped3">
+          <img class="gallery" src="images/ale 36.heic" alt="ale36">
+          <img class="gallery" src="images/kiss.jpg" alt="Kiss">
+          <img class="gallery" src="images/viva.jpeg" alt="Viva">
+          <img class="gallery" src="images/ale 1.jpg" alt="ale1">
+          <img class="gallery" src="images/ale 34.heic" alt="ale34">
+          <img class="gallery" src="images/antigo.jpg" alt="antigo">
+          <img class="gallery" src="images/ale 21.jpg" alt="ale21">
+          <img class="gallery" src="images/antigo 3.jpg" alt="velho">
+          <img class="gallery" src="images/ale 5.jpeg" alt="ale5">
+          <img class="gallery" src="images/mary.png" alt="Mary">
+          <img class="gallery" src="images/morgana.jpg" alt="morg">
+          <img class="gallery" src="images/ale 20.jpg" alt="ale20">
+          <img class="gallery" src="images/ale 23.jpg" alt="ale23">
+          <img class="gallery" src="images/ale 22.jpg" alt="ale22">
+          <img class="gallery" src="images/ale 33.jpg" alt="ale33">
+          <img class="gallery" src="images/mao.jpg" alt="Mão"/>
+          <img class="gallery" src="images/ale 39.heic" alt="ale39">
+          <img class="gallery" src="images/ale 32.jpg" alt="ale32">
+          <img class="gallery" src="images/ale 35.jpg" alt="ale35">
+          <img class="gallery" src="images/rc.jpg" alt="RC"/>
+          <img class="gallery" src="images/esf.jpg" alt="esf">
+          <img class="gallery" src="images/ale 10.jpg" alt="ale10">
+          <img class="gallery" src="images/ale 27.jpg" alt="ale27">
+          <img class="gallery" src="images/ale 17.jpg" alt="ale17">
+          <img class="gallery" src="images/ale 18.jpg" alt="ale18">
+          <img class="gallery" src="images/meio medico 01.jpg" alt="mm1">
+          <img class="gallery" src="images/ale 38.heic" alt="ale38">
+          <img class="gallery" src="images/ale 31.jpg" alt="ale31">
+          <img class="gallery" src="images/meio medico 04.jpg" alt="mm4">
+          <img class="gallery" src="images/meio medico 05.jpg" alt="mm5">
+          <img class="gallery" src="images/ale 19.jpg" alt="ale19">
+          <img class="gallery" src="images/meio medico 03.jpg" alt="mm3">
+          <img class="gallery" src="images/ale 7.jpg" alt="ale7">
+          <img class="gallery" src="images/ale 26.jpg" alt="ale26">
+          <img class="gallery" src="images/grupo.jpg" alt="Grupo"/>
+          <img class="gallery" src="images/ale 8.jpg" alt="ale8">
+          <img class="gallery" src="images/risos.jpg" alt="risos">
+          <img class="gallery" src="images/ale 37.jpg" alt="ale37">
+          <img class="gallery" src="images/dad.jpg" alt="Dad"/>
+          <img class="gallery" src="images/foto familia grande.jpg" alt="Ana"/>
+          <img class="gallery" src="images/antigo 2.jpg" alt="antigo2">
+          <img class="gallery" src="images/ped 4.jpg" alt="ped4">
+          <img class="gallery" src="images/vovos.jpg" alt="Vovós"/>
+          <img class="gallery" src="images/turma.jpg" alt="turma">
+          <img class="gallery" src="images/stwm.jpg" alt="stwm">
+          <img class="gallery" src="images/trio 2.png" alt="32">
+          <img class="gallery" src="images/vo gui vovo.jpg" alt="vv">
+          <img class="gallery" src="images/trio.png" alt="3">
+          <img class="gallery" src="images/vo nana e vo jovi.jpg" alt="vnj">
+        </div>
+      </div>
+    </section>
+
+    <section id="Infos" class="tab-content tab-infos">
+      <h3 class="title">Aqui vão algumas informações:</h3>
+
+     <div class="infos-text1">
+       <p>a festa ocorrerá no dia <strong>29.11.2025</strong>,</p>
+       <p>das <strong>23h</strong> até às <strong>5h</strong>, no <strong>Expominas BH</strong>.</p>
+     </div>
+
+     <div class="infos-text2">
+       <p>Endereço: Av. Amazonas, 6200 </p>
+       <p>Gameleira - Belo Horizonte.</p>
+     </div>  
+
+     <div class="infos-text3">
+       <h4 class="title">TRAJE:</h4>
+       <p>SOCIAL COMPLETO</p>
+     </div>
+
+     <gmp-map center="-19.93060874938965,-43.99040603637695" zoom="16" map-id="DEMO_MAP_ID">
+       <gmp-advanced-marker position="-19.93060874938965,-43.99040603637695" title="Expominas BH"></gmp-advanced-marker>
+     </gmp-map>
+     
+     <div class="photo">
+       <img class="logo" src="images/logo.png" alt="logo">
+     </div>
+
+      <button class="back-btn" data-target="Present">VOLTAR</button>
+    </section>
+
+    <section id="RSVP" class="tab-content tab-rsvp">
+      <button class="back-btn" data-target="Present">VOLTAR</button>
+       <h5 class="title">Posso contar com você na festa?</h5>
+
+      <div class="main-login">
+        <div class="left-login">
+          <p>Gostaria de poder convidar toda família e amigos, mas infelizmente a quantidade de ingressos é limitada.<br>
+          Peço que confirmem a presença abaixo e respondam o formulário ao lado até o dia <strong>15.08.2025</strong><br><br>
+          <strong>Obs.: se o convite (enviado pelo WhatsApp) foi direcionado à mais de uma pessoa, favor preencher o formulário novamente com os dados de cada um</strong></p>
+      
+          <div class="nav" id="main-nav">
+            <button onclick="salvarNoCalendario()" class="nav-item" data-link="calendar">NA AGENDA!</button>
+          </div>  
+        </div>
+
+        <div class="infos-text4">
+          <h6 class="title">NÃO SE ESQUEÇA DE SALVAR</h6>
+        </div>
+
+        <div id="infos-text5" class="infos-text5" style="display:none;">
+          <p>Combinei com a maquiadora e com a cabeleireira de reservar <strong>a tarde</strong> para nos arrumarmos aqui em casa.
+          Para quem quiser agendar um horário, favor confirmar ao lado e colocar a partir de qual horário (depois de 13h) seria melhor.
+          Caso não necessite, apenas digite "não"</p>
+        </div>
+
+        <div class="right-login">
+          <div class="attendance123">
+            <div class="attendance1">
+              <button class="yes-btn">É CLARO! NÃO PERDERIA POR NADA!</button>
+            </div>
+
+            <div class="attendance2">
+              <button class="maybe-btn">AINDA NÃO TENHO CERTEZA</button>
+            </div>
+
+            <div class="attendance3">
+              <button class="no-btn">INFELIZMENTE NÃO PODEREI IR</button>
+            </div>
+          </div>
+      
+          <div class="no-response-message" style="display: none;">
+            <p><strong>Ah, que pena! Você fará falta...<br>A festa não será a mesma sem você</strong><br><br>E não se
+              preocupe, caso tenha clicado errado ou mude de ideia, é só recarregar a página!</p>
+          </div>
+
+          <form id="meuForm">
+            <div class="card-login" style="display:none;">
+              <div class="textfieldN">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+              </div>
+
+              <div class="textfieldGroup">
+
+                <div class="textfieldW">
+                  <label for="phone">WhatsApp:</label>
+                  <input type="tel" id="campoW" name="phone" placeholder="Seu WhatsApp" pattern="\(\d{2}\) \d{1} \d{4}-\d{4}" required>
+                </div>
+
+                <div class="textfieldI">
+                  <label for="inicials">Suas iniciais:</label>
+                  <input type="text" id="campoI" name="inicials" pattern="[A-Za-z]{2,3}" title="Digite 2 a 3 letras" placeholder="Digite de 02 a 03 letras" required>
+                </div>
+              </div> 
+            
+              <div class="textfieldGroupB">
+                <div class="textfieldF">
+                  <label>Sexo:</label>
+                    <div class="radio-group">
+                      <label>
+                        <input type="radio" id="masculino" name="sex" value="Masculino" required>
+                        Masculino
+                      </label>
+
+                      <label>
+                        <input type="radio" id="feminino" name="sex" value="Feminino">
+                        Feminino
+                      </label>
+                    </div>
+                </div>
+
+                <div class="textfieldA">
+                  <label for="age">Idade:</label>
+                  <select id="age" name="age" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="0-09">09 anos ou menos</option>
+                    <option value="10-14">10-14 anos</option>
+                    <option value="15-45">15-45 anos</option>
+                    <option value="46+">46 anos ou mais</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="textfieldD">
+                <label for="alergy">Você tem alguma alergia ou restrição?</label>
+                <input type="text" id="alergy" name="alergy" placeholder="Alimento / Medicamento" required>
+              </div>
+
+              <div class="textfieldGroupC">
+                <div class="textfieldS" style="display:none;">
+                  <label for="size">Quanto você calça?</label>
+                    <select id="size" name="size">
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="34">≤32</option>
+                      <option value="33">33</option>
+                      <option value="34">34</option>
+                      <option value="35">35</option>
+                      <option value="36">36</option>
+                      <option value="37">37</option>
+                      <option value="38">38</option>
+                      <option value="39">39</option>
+                      <option value="40">≥40</option>
+                    </select>
+                </div>
+
+                <div class="textfieldM"  style="display:none;">
+                  <label for="makeup">Reservar horário pra make?</label>
+                  <input type="text" id="makeup" name="makeup" placeholder="Valor: R$190,00">
+                </div>
+              </div>
+
+              <div class="textfieldH"  style="display:none;">
+                <label for="hair">Reservar horário pra arrumar o cabelo?</label>
+                <input type="text" id="hair" name="hair" placeholder="Valores: R$120,00 (escova) | R$180,00 (cachos) | R$200,00 (penteado)">
+              </div>
+
+              <div class="nav" id="second-nav">
+                 <button type="submit" class="submit nav-item" style="display: none;">ENVIAR</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="send-response-message" style="display: none;">
+            <p><strong>Oba! Seus dados já foram salvos!</strong><br>Logo logo você receberá uma mensagem no seu WhatsApp com os dados
+              (preenchidos no formulário) para conferência e o link para entrar no grupo da festa!<br><br>
+              O convite foi direcionado à mais de uma pessoa? Clique no botão abaixo e preencha o formulário mais uma vez!</p>
+
+            <button id="novaRespostaBtn">NOVA RESPOSTA</button>
+          </div>
+        </div>
+      </div>
+    </section>
+ </div>
+
+  <footer>
+    <p>Desenvolvido por Ana Luísa Braga</p>
+    <p>© 2025 Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
